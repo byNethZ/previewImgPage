@@ -3,7 +3,8 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     padding: 2rem;
     display: block;
-    margin: 2rem auto;
+    margin: 4rem auto;
+    width: 55%;
 }
 form{
     display: flex;
@@ -16,6 +17,9 @@ form{
 }
 .imagePreview{
     position: relative;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .uploadImg, 
 .capaImg,
@@ -26,6 +30,7 @@ form{
     bottom: 0;
     left: 0;
     right: 0;
+    width: 100%;
 }
 .uploadImg img, 
 .capaImg img{
