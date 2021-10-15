@@ -27,6 +27,12 @@ form{
     left: 0;
     right: 0;
 }
+.uploadImg img, 
+.capaImg img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .uploadImg img{
     z-index: 5;
 }
