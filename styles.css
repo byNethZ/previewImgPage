@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    max-width: 15rem;
+    display: block;
+    margin: 3rem auto;
+}
 .form{
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -14,7 +24,29 @@ form{
 }
 .label{
     margin: .5rem 0;
+    font-weight: 400;
 }
+
+input[type="submit"]{
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0034c8;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5rem;
+    padding: .8rem;
+}
+
+.text{
+    text-align: center;
+    font-weight: 100;
+}
+
+/* Image Preview */
 .imagePreview{
     position: relative;
     width: 55%;
