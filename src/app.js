@@ -78,8 +78,14 @@ function sendCanvas(){
         let unCanvas = Object.keys(arrayCanvas);
         for(let i = 0; i < unCanvas.length; i++){
             let ajax = new XMLHttpRequest();
-            // ajax.open('POST', 'correo.php', true);
-            ajax.send();
+            ajax.open('POST', 'correo.php', true);
+            ajax.send("message" + arrayCanvas[i]);
+
+            ajax.onreadystatechange = function (){
+                if(this.readyState == 4 && this.status == 200){
+                    console.log(this.responseText);
+                }
+            }
             console.log(arrayCanvas[i])
         }
     });
