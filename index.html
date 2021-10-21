@@ -5,58 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check List</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
-    <img class="logo" src="./img/Logo_azul_slogan.png" alt="Logo Bliones">
+    <img class="logo" src="./src/img/Logo_azul_slogan.png" alt="Logo Bliones">
     <div class="form">
-        <form action="">
-            <div class="label">
-                <input type="checkbox" id="textos">
-                <label for="textos">Textos revisados por Irma</label>
+        <form action="" enctype="multipart/form-data">
+            <div id="form-content">
+                <div class="label">
+                    <input type="checkbox" id="textos">
+                    <label for="textos">Textos revisados por Irma</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" id="escritura">
+                    <label for="escritura">Verificar escritura de forma correcta de dirección Google o Cliente</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" id="llamada">
+                    <label for="llamada">Confirmar números con llamada, vendedor o Carolina</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" id="qr">
+                    <label for="qr">Página web, redes sociales y QR</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" id="watermark">
+                    <label for="watermark">Guardado en altas y sin marcas de agua</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" id="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" id="pagadp">
+                    <label for="pagado">Pagado</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" id="enviado">
+                    <label for="enviado">Envío</label>
+                </div>
             </div>
-            <div class="label">
-                <input type="checkbox" id="escritura">
-                <label for="escritura">Verificar escritura de forma correcta de dirección Google o Cliente</label>
-            </div>
-            <div class="label">
-                <input type="checkbox" id="llamada">
-                <label for="llamada">Confirmar números con llamada, vendedor o Carolina</label>
-            </div>
-            <div class="label">
-                <input type="checkbox" id="qr">
-                <label for="qr">Página web, redes sociales y QR</label>
-            </div>
-            <div class="label">
-                <input type="checkbox" id="watermark">
-                <label for="watermark">Guardado en altas y sin marcas de agua</label>
-            </div>
-            <div class="label">
-                <input type="checkbox" id="email">
-                <label for="email">Email</label>
-            </div>
-            <div class="label">
-                <input type="checkbox" id="pagadp">
-                <label for="pagado">Pagado</label>
-            </div>
-            <div class="label">
-                <input type="checkbox" id="enviado">
-                <label for="enviado">Envío</label>
-            </div>
+            <p class="text">Verifica que el diseño se coloque correctamente dentro de las guías</p>
             <div class="labelFile">
-                <input type="file" id="imagen" name="imagen">
+                <input type="file" name="imagen" multiple>
             </div>
-            <input type="submit" value="Enviar por Correo">
+            <div class="submit">
+                <input type="submit" value="Enviar por Correo">
+            </div>
         </form>
 
     </div>
-    <p class="text">Verifica que el diseño se coloque correctamente dentro de las guías</p>
-    <div class="imagePreview">
-        <div class="uploadImg" id="imgPreview"></div>
-        <div class="capaImg"><img src="./img/capa2.png" alt="capa"></div>
+    <div class="imagePreview" id="preview-content">
+    </div>
+    <div class="btnPreview">
+        <button class="inactive" id="btnCorrecto">Correcto</button>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="app.js"></script>
+    <script src="./src/html2canvas.js"></script>
+    <script src="./src/app.js"></script>
 </body>
 </html>

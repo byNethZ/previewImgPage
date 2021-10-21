@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    max-width: 15rem;
+    display: block;
+    margin: 3rem auto;
+}
+.form{
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 2rem;
+    display: block;
+    margin: 4rem auto;
+    width: 55%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.label{
+    margin: .5rem 0;
+    font-weight: 400;
+}
+
+input[type="submit"]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0034c8;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5rem;
+    padding: .8rem;
+}
+input[type="submit"]:hover{
+    background-color: #00144b;
+}
+.submit{
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.text{
+    text-align: center;
+    font-weight: 100;
+}
+
+/* Label file */
+.labelFile{
+    margin-top: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* Image Preview */
+.imagePreview{
+    position: relative;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div-padre{
+    position: relative;
+    height: 26rem;
+}
+.uploadImg, 
+.capaImg{
+    position: relative;
+}
+.uploadImg img, 
+.capaImg img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.uploadImg img, 
+.capaImg img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.uploadImg img{
+    z-index: 5;
+}
+.capaImg img{
+    z-index: 10;
+}
+
+/* Boton Image preview */
+.btnPreview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+.btnPreview button{
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5rem .3rem;
+    border: 1px solid #000;
+    border-radius: .5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.inactive{
+    background-color: #545454;
+    
+}
+
+.active{
+    background-color: #0034c8;
+}
